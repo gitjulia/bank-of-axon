@@ -12,3 +12,10 @@ From Spring docs:
 ** Inherit spring-boot-starter-parent pom; include spring-boot-starter-web
 * Automatically configure Spring whenever possible
 * Provide production-ready features such as metrics, health checks and externalized configuration (using Spring Actuator)
+
+#Misc notes
+##If you clone an empty repo and try to push to it,
+"No refs in common and none specified; doing nothing."
+Fix: git push -u origin master
+
+##To check tracking of git, see .git/config
