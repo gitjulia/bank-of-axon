@@ -18,4 +18,12 @@ From Spring docs:
 "No refs in common and none specified; doing nothing."
 Fix: git push -u origin master
 
-##To check tracking of git, see .git/config
+##To see git configurations, .git/config:
+Also contains tracking configurations
+
+##To set up git username for a specific repo:
+In root folder of your repo,
+$ git config user.name "myUsername"
+
+##To set up git username for ALL repos:
+$ git config --global user.name "myUsername"
