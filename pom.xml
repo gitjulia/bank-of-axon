@@ -10,6 +10,11 @@
     <name>Bank of Axon application</name>
     <description>Using Axon with Spring and Mongo</description>
 
+    <properties>
+        <axon.version>2.1.1</axon.version>
+        <elasticsearch.version>0.90.11</elasticsearch.version>
+    </properties>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -20,6 +25,26 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-core</artifactId>
+            <version>${axon.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-integration</artifactId>
+            <version>${axon.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>1.0.0.M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>${elasticsearch.version}</version>
         </dependency>
     </dependencies>
 </project>
